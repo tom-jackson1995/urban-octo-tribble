@@ -1,16 +1,15 @@
-
-
-def play_fizz_buzz(number):
+def play_fizz_buzz(number, numbers):
     try:
-        if number >= 0:
-            if number % 3 == 0 and number % 5 == 0:
-                print("Fizz Buzz")
-            elif number % 3 == 0:
-                print("Fizz")
-            elif number % 5 == 0:
-                print("Buzz")
-            else:
-                print(number)        
+        for count in range (number, numbers):
+            if count >= 0:
+                if count % 3 == 0 and count % 5 == 0:
+                    print("Fizz Buzz")
+                elif count % 3 == 0:
+                    print("Fizz")
+                elif count % 5 == 0:
+                    print("Buzz")
+                else:
+                    print(count)        
     except TypeError:
         print("Error, this method only takes whole Integer numbers, please try again")
     except ZeroDivisionError:
@@ -18,5 +17,4 @@ def play_fizz_buzz(number):
     except NameError:
         print("Error, this method only takes whole Integer numbers, please try again")
 
-
-play_fizz_buzz(tom)
+play_fizz_buzz (1, 11)
