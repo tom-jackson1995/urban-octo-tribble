@@ -1,7 +1,7 @@
 def play_fizz_buzz(number, numbers):
     multi_1 = 3
     multi_2 = 5
-    multi_3 = 7  
+    multi_3 = 7
     try:
         for count in range (number, numbers):
             returning_list = [] 
@@ -23,3 +23,5 @@ def play_fizz_buzz(number, numbers):
         print("Error, this method only takes whole Integer numbers, please try again")
     except ZeroDivisionError:
         print("Fizz Buzz as a game needs something to work with, numbers passed cannot include Zero (0)") 
+
+play_fizz_buzz(1, 22)    
