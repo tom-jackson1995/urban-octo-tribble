@@ -5,7 +5,7 @@ def play_fizz_buzz(number, numbers):
     try:
         for count in range (number, numbers):
             returning_list = [] 
-            check = 0
+            check = 2
             if count > 0:
                 if count % multi_1 == 0:
                     returning_list.append("Fizz")
